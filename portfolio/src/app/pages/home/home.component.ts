@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public modalVideo: boolean = false 
+  constructor(){}
+
+  public openVideo(){
+    this.modalVideo = true
+  }
+
+  public closeVideo(){
+    this.modalVideo = false
+  }
+
 }

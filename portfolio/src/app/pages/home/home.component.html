@@ -4,47 +4,61 @@
             <div class="cardInfo">
                 <div class="title">
                     <h1 id="titleName">Belén Castelli Gubiotti</h1>
-                    <h2 id="subtitle">Desarrolladora Web Full Stack</h2>
+                    <h3 id="subtitle">Desarrolladora Web Full Stack</h3>
                 </div>
                 <div class="myInfo">
                     <p>Soy una entusiasta del desarrollo web, apasionada por dar vida a ideas.  Con experiencia en frontend y backend, 
                         estoy preparada para abordar nuevos desafíos y crear soluciones innovadoras.</p>
                     <div class="downloadCV">
                         <a href="../../../assets/docs/CV_BelenCastelliGubiotti.pdf" target="_blank">
-                            <!-- <div>
-                                <img src="../../../assets/images/CV.png" alt="">
-                            </div> -->
                            Descarga mi CV aquí
                         </a>
                     </div>
                 </div>
-
             </div>
             <div class="cardPhoto">
                 <div class="myPhoto">
-                    <img id="photo" src="../../../assets/images/image 1.png" alt="Foto BelenCastelli" width="320px">
+                    <img id="photo" src="../../../assets/images/image 1.png" alt="Foto BelenCastelli" width="320px" id="photoPerfil">
                 </div>
                 <div class="social">
                     <div class="socialIcon">
                         <a href="https://www.linkedin.com/in/bel%C3%A9n-castelli-gubiotti-34b111263/" target="_blank">
-                            <img id="linkedin" src="../../../assets/images/LinkedIn_logo_initials 1.png" alt="Linkedin Logo">
+                            <img id="linkedin" src="../../../assets/images/LinkedIn_logo_initials 1.png" alt="Linkedin Logo" height="35px" class="icon">
                         </a>
                     </div>
                     <div class="socialIcon">
                         <a href="https://github.com/BelenCastelli">
-                            <img id="github" src="../../../assets/images/klipartz 1.png" alt="github logo">
+                            <img id="github" src="../../../assets/images/klipartz 1.png" alt="github logo" height="35px" class="icon">
                         </a>
                     </div>
                     <div class="socialIcon">
-                        <img id="videocv" src="../../../assets/images/Circled Play.png" alt="icon video">
+        
+                        <img id="videocv" src="../../../assets/images/image 11.png" alt="icon youTube" height="30px" class="icon"
+                        (click)="openVideo()">
                     </div>
                     
                 </div>
 
             </div>
+            <div *ngIf="modalVideo">
+                <div class="modalVideo">
+                    <div class="close">
+                        <img src="../../../assets/images/Cancel.png" alt="" id="closeCV"
+                        (click)="closeVideo()">
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2gG7gCRinRk?si=pxREnDXsppmLiuVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
 
+ 
+
     </section>
+
+
     
     <section class="about">
     

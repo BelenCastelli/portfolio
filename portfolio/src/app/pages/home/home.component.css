@@ -1,12 +1,12 @@
 
 .main{
     width: 100%;
-    margin-top: 120px;
+    margin-top: 140px;
 }
 
 /* Presentation */
 .presentation{
-    height: 800px;
+    height: 775px;
     background-color: #070420;
 
     display: flex;
@@ -33,36 +33,40 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
-.title{
+.title, .myInfo{
+    width: 85%;
+    padding: 10px;
+
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
 }
 #titleName{
-    font-size: 4vh;
+    font-size: 24pt;
+    text-align: center;
 }
 #subtitle{
     color: #579DF2;
+    text-align: center;
+    /* font-size: 1.8vw; */
 }
 
 .myInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+ gap: 15px;
 }
 
 .myInfo p {
     color: white;
+    /* font-size: 1.2vw; */
 }
 
 .downloadCV{
-    height: 50px;
+    height: 45px;
     padding: 20px;
+
 
     align-self: flex-end;
     display: flex;
@@ -73,6 +77,7 @@
 .downloadCV a {
     text-decoration: none;
     color: white;
+    text-align: center;
    
 }
 .downloadCV:hover{
@@ -88,20 +93,68 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
+}
+
+.myPhoto{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+#photoPerfil{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .social{
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+
 
 .socialIcon:hover{
     cursor: pointer;
 }
 
+.icon:hover{
+    filter: brightness(60%);
+}
+
+.modalVideo{
+    width: 1100px;
+    height: 450px;
+    padding: 10px;
+    position: absolute;
+    right: 400px;
+    z-index: 99;
+
+    border: solid #579DF2;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px #579DF2;
+    background-color: #070420;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.video{
+    align-self: center;
+}
+
+.close{
+    align-self: flex-end;
+}
+#closeCV:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px red;
+}
 /* About */
 .about{
     height: 650px;
