@@ -1,0 +1,45 @@
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    padding: 15px;
+    width: 400px;
+    height: 350px;
+
+    border: solid black 2px;
+    border-radius: 15px;
+    font-family: monospace;
+}
+.titleP{
+    padding: 10px;
+    border-radius: 15px;
+    height: 50px;
+    width: 180px;
+    text-align: center;
+}
+
+.titleP h4{
+    font-size: 14pt;
+}
+.titleProject{
+    background-color: #5C3D1D ;
+    color: #FEDFBA;
+}
+.titleProject2{
+    background-color: #FD3E3E ;
+    color: white;
+}
+.titleProject3{
+    background-color: black;
+    color: white;
+}
+.imgProject{
+    justify-self: flex-end;
+}
+.imgP{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

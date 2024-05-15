@@ -1,1 +1,14 @@
-<p>projects works!</p>
+<div class="projectsContainer">
+    <div class="titleP"  [ngClass]="{'titleProject': project.title.startsWith('my'), 'titleProject2': project.title.startsWith('Po'),
+     'titleProject3': project.title.startsWith('Tr')
+    }">
+        <h4>{{project.title}}</h4>
+    </div>
+    <div>
+        <p>{{project.description}}</p>
+        <p>{{project.techs}}</p>
+    </div>
+    <div class="imgProject">
+        <img [src]="project.photo" alt="" width="400px" class="imgP">
+    </div>
+</div>

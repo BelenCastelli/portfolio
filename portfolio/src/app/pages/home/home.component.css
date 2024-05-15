@@ -347,7 +347,7 @@
     /* box-shadow: 0px 0px 20px 4px #C38A31; */
 }
 
-.titleMagydeck h5{
+.titleMagydeck h4{
     font-family:'Courier New', Courier, monospace;
     font-size: 16pt;
     text-align: center;
@@ -377,6 +377,12 @@
 }
 .videoMagy{
     align-self: center;
+}
+
+.otherProjs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .photoMagydeck{
