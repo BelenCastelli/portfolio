@@ -176,7 +176,7 @@
     width: 200px;
 }
 
-.titleAbout h4, .titleTech h4{
+.titleAbout h4, .titleTech h4, .titleProyects h4{
     font-size: 20pt;
     color: #e0cec2;
     text-align: center;
@@ -206,7 +206,8 @@
 
 /* Technologies */
 .technologies{
-    height: 775px;
+    /* height: 775px; */
+    padding: 50px 0px;
     background-color: #070420;
     display: flex;
     flex-direction: column;
@@ -222,12 +223,15 @@
     justify-content: center;
     gap: 50px;
 }
-.titleTech{
+.titleTech, .titleProyects{
     font-family: 'Courier New', Courier, monospace;
     color: #e0cec2;
-    background-image: linear-gradient(to right, #16203F, #0B59B1, #0A2F5B);
     padding: 10px;
     border-radius: 15px;
+}
+
+.titleTech{
+    background-image: linear-gradient(to right, #16203F, #0B59B1, #0A2F5B);
 }
 .start{
     align-self: flex-start;
@@ -238,46 +242,157 @@
 }
 
 .techs{
-    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+
+    gap: 40px;
 }
 
 .frontend, .backend, .tools{
-    width: 30%;
+    width: 400px;
     height: 500px;
     border: solid #579DF2 2px;
     padding: 10px;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
 }
 
 .frontend{
     box-shadow: -20px 20px 20px 1px #579DF2;
-    gap: 7px;
+    /* gap: 7px; */
 }
 
 .backend{
     box-shadow: 0px 20px 20px 1px #579DF2;
-    gap: 15px;
+    gap: 10px;
+    padding-top: 25px;
 }
 
 .tools{
     box-shadow: 20px 20px 20px 1px #579DF2;
-    gap: 17px;
+    /* gap: 17px; */
+}
+
+.imgIcon{
+    height: 100%;
+    width: 100%;
+  object-fit: fill;
 }
 
 
 /* proyects */
 .projects{
-    height: 1500px;
+    padding: 50px 0px;
     background-color: #e0cec2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectsContainer{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleProyects{
+    background-image: linear-gradient(to right, #664900, #A67700, #A67700, #A67700, #664900);
+}
+
+.bodyProyects{
+    display: flex;
+    flex-direction: column;
+}
+
+/* principal proyect */
+
+.magyDeck{
+    display: flex;
+    padding: 15px;
+    height: 650px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
 }
+
+.aboutMagydeck{
+    border: solid #C38A31 2px;
+    border-radius: 15px;
+    /* box-shadow: -10px 10px 40px #C38A31; */
+    width: 38%;
+    height: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.titleMagydeck{
+    background-color: #C38A31;
+    align-self: center;
+    padding: 10px;
+    width: 160px;
+    border-radius: 15px;
+    border: solid black 1px;
+    /* box-shadow: 0px 0px 20px 4px #C38A31; */
+}
+
+.titleMagydeck h5{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16pt;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(73, 62, 9)
+}
+
+/* .descriptionMagydeck{
+
+} */
+
+.descriptionMagydeck p {
+    font-family: monospace;
+    font-size: 14pt;
+}
+
+.socialMagydeck{
+    align-self: center;
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #C38A31;
+    border-radius: 15px;
+    /* height: 50px; */
+
+}
+.videoMagy{
+    align-self: center;
+}
+
+.photoMagydeck{
+    border: solid #C38A31 2px;
+    border-radius: 15px;
+    width: 58%;
+    height: 100%;
+      /* box-shadow: 10px 10px 40px #C38A31; */
+
+}
+#imgMagy{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 /* contact */
 
 .contact{
