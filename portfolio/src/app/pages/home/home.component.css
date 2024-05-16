@@ -289,8 +289,7 @@
     padding: 50px 0px;
     background-color: #e0cec2;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .projectsContainer{
@@ -367,7 +366,6 @@
 .socialMagydeck{
     align-self: center;
     width: 90%;
-    padding-top: 2px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -404,7 +402,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
 }
 
 .photoMagydeck{
@@ -425,8 +423,79 @@
 /* contact */
 
 .contact{
-    height:800px ;
     background-color: #070420;;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    gap: 50px;
+}
+
+
+.contacSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.opinion{
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+}
+.infoContainer{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.infoContact{
+    border: solid #579DF2 2px;
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+/* .imgContact
+{
+    border: solid white 2px;
+} */
+
+.textContact{
+    align-self: center;
+    font-size: 16pt;
+    text-decoration: underline;
+}
+
+.socialNet{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.howContact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.howContact p {
+    font-size: 13pt;
+    padding-top: 10px;
 }
 
 @media screen {

@@ -1,14 +1,20 @@
 <div class="projectsContainer">
-    <div class="titleP"  [ngClass]="{'titleProject': project.title.startsWith('my'), 'titleProject2': project.title.startsWith('Po'),
-     'titleProject3': project.title.startsWith('Tr')
-    }">
-        <h4>{{project.title}}</h4>
+    <div class="otherTi">
+        <div class="titleP"  [ngClass]="{'titleProject': project.title.startsWith('my'), 'titleProject2': project.title.startsWith('Po'),
+        'titleProject3': project.title.startsWith('Tr')
+       }">
+           <h4>{{project.title}}</h4>
+       </div>
+       <div class="github">
+        <a [href]="project.link" target="_blank"><img src="../../../assets/images/projects/GitHub.png" alt=""></a>
+       </div>
     </div>
+
     <div class="textProjs">
         <p>{{project.description}}</p>
         <p>{{project.techs}}</p>
     </div>
     <div class="imgProject">
-        <img [src]="project.photo" alt="" width="400px" class="imgP">
+        <img [src]="project.photo" alt="" width="350px" class="imgP">
     </div>
 </div>
