@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

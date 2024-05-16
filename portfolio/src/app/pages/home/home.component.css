@@ -289,8 +289,7 @@
     padding: 50px 0px;
     background-color: #e0cec2;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .projectsContainer{
@@ -300,22 +299,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 
 .titleProyects{
     background-image: linear-gradient(to right, #664900, #A67700, #A67700, #A67700, #664900);
 }
 
-.bodyProyects{
+.bodyProjects{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 
 /* principal proyect */
 
 .magyDeck{
     display: flex;
-    padding: 15px;
     height: 650px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -329,10 +329,10 @@
     /* box-shadow: -10px 10px 40px #C38A31; */
     width: 38%;
     height: 100%;
-    padding: 20px;
+    padding: 15px;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
 }
@@ -341,7 +341,7 @@
     background-color: #C38A31;
     align-self: center;
     padding: 10px;
-    width: 160px;
+    width: 200px;
     border-radius: 15px;
     border: solid black 1px;
     /* box-shadow: 0px 0px 20px 4px #C38A31; */
@@ -349,7 +349,7 @@
 
 .titleMagydeck h4{
     font-family:'Courier New', Courier, monospace;
-    font-size: 16pt;
+    font-size: 20pt;
     text-align: center;
     text-shadow: 2px 2px 4px rgb(73, 62, 9)
 }
@@ -360,50 +360,142 @@
 
 .descriptionMagydeck p {
     font-family: monospace;
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 .socialMagydeck{
     align-self: center;
     width: 90%;
-    padding: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #C38A31;
     border-radius: 15px;
     /* height: 50px; */
-
 }
+.iconMagy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.github:hover{
+    border-radius: 502px;
+}
+.linkMagy:hover{
+    box-shadow: 0px 0px 10px 2px white;
+    transform: scale(1.1);
+}
+
+
 .videoMagy{
-    align-self: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.videoMagy iframe {
+    object-fit: contain;
 }
 
 .otherProjs{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 .photoMagydeck{
     border: solid #C38A31 2px;
     border-radius: 15px;
     width: 58%;
-    height: 100%;
+    display: flex;
+    /* height: 100%; */
       /* box-shadow: 10px 10px 40px #C38A31; */
 
 }
 #imgMagy{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /* contact */
 
 .contact{
-    height:800px ;
     background-color: #070420;;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    gap: 50px;
+}
+
+
+.contacSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.opinion{
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+}
+.infoContainer{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.infoContact{
+    border: solid #579DF2 2px;
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+/* .imgContact
+{
+    border: solid white 2px;
+} */
+
+.textContact{
+    align-self: center;
+    font-size: 16pt;
+    text-decoration: underline;
+}
+
+.socialNet{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.howContact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.howContact p {
+    font-size: 13pt;
+    padding-top: 10px;
 }
 
 @media screen {
