@@ -9,6 +9,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './pages/about/about.component';
+import { TechsComponent } from './pages/techs/techs.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,13 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProyectosComponent,
+  
+    
+    AboutComponent,
+    TechsComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
