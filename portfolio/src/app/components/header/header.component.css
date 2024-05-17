@@ -48,7 +48,7 @@
     list-style: none;
 }
 
-.nav ul li:hover {
+.nav ul li:hover, #titleName:hover {
     color: #579DF2;
     text-decoration: underline;
     cursor: pointer;
