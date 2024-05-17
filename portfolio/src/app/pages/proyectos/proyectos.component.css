@@ -23,6 +23,8 @@
     border-radius: 15px;
     height: 55px;
     width: 300px;
+    display: flex;
+    justify-content: center;
 }
 .start{
     align-self: flex-start;
@@ -55,12 +57,13 @@
 
     width: 480px;
     height: 100%;
-    padding: 15px;
+    padding: 15px 0px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
+
 }
 
 .titleMagydeck{
@@ -70,6 +73,7 @@
     width: 200px;
     border-radius: 15px;
     border: solid black 1px;
+
 }
 
 .titleMagydeck h4{
