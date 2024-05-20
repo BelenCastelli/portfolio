@@ -67,10 +67,6 @@
 
 
 }
-/* .imgContact
-{
-    border: solid white 2px;
-} */
 
 .textContact{
     align-self: center;
@@ -95,4 +91,11 @@
 .howContact p {
     font-size: 13pt;
     padding-top: 10px;
+}
+
+@media screen and (max-width: 650px)
+{
+    .infoContainer, #photoContact{
+   width: 400px;
+    }
 }
