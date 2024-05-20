@@ -81,3 +81,32 @@
   object-fit: fill;
 }
 
+@media screen and (max-width: 1845px){
+    .frontend{
+        box-shadow: -20px 20px 20px 1px #579DF2;
+    }
+    
+    .backend{
+        box-shadow: 20px 20px 20px 1px #579DF2
+    }
+    
+    .tools{
+        box-shadow: 0px 20px 20px 1px #579DF2;
+        
+    }
+}
+
+@media screen and (max-width: 1216px){
+    .frontend{
+        box-shadow: 0px 20px 20px 1px #579DF2;
+    }
+    
+    .backend{
+        box-shadow: 0px 20px 20px 1px #579DF2;
+    }
+    
+    .tools{
+        box-shadow: 0px 20px 20px 1px #579DF2;
+        
+    }
+}

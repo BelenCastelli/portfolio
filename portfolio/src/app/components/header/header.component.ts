@@ -7,7 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private router:Router){}
+  menuOpen: boolean = true;
+
+
+
+  constructor(private router:Router){
+    
+  }
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 
 
 
